@@ -60,7 +60,7 @@ This project is a lightweight browser-based face-tracking AR demo built with **M
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 # Features
-- Real-time face tracking with MindAR.
+- Real-time face tracking with ```MindAR```.
 - Load and display a GLB 3D hat model on the head of a user using webcam.
   
 Keyboard controls for adjusting:
@@ -99,4 +99,4 @@ We ensure `cowboy_hat.glb` is in the same directory as `index.html`
 | `R`               | Reset to default preset         |
 | `T`               | Apply custom preset             |
 
-The improvement ideas for both the tasks are written in separate improvements.md file 
+The improvement ideas for both the tasks are written in separate ```improvements.md``` file 
