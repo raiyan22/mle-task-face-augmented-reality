@@ -24,10 +24,11 @@ pip install -r requirements.txt
 # basic run
 python3 gen_3d.py --input "input/hat.jpeg" --output "output/hat.glb"
 
-Flag	            Default	        Description
---input / -i	Required	        Path to the image you want to convert.
---output / -o	output/model.glb	Where to save the file.
---steps / -s	64	                Number of diffusion steps. Lower is faster. Higher is slower but better detail.
+| Flag / Option       | Description                                              | Required | Default / Example            |
+|---------------------|----------------------------------------------------------|----------|------------------------------|
+| `--input` / `-i`   | Path to the image you want to convert.                   | Yes      |                              |
+| `--output` / `-o`  | Output file path, e.g., `output/model.glb`             |          | `output/model.glb`           |
+| `--steps` / `-s`   | Number of diffusion steps. Lower is faster; higher yields better detail. |          | `64`                         |
 
 # example
 python3 gen_3d.py -i input/image.png -s 8 
