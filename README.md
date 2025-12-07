@@ -7,6 +7,7 @@ A simple program to convert 2D images into 3D `.glb` models using OpenAI's Shap-
 
 # project structure
 gen-three-d-model/
+
 ├── gen_3d.py          
 ├── requirements.txt   
 ├── README.md          
@@ -15,7 +16,7 @@ gen-three-d-model/
 # after cloning repo create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate
-# on Windows use: venv\Scripts\activate
+### on Windows use: venv\Scripts\activate
 
 # install dependencies
 pip install -r requirements.txt
