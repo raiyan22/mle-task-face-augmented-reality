@@ -1,14 +1,12 @@
 ## task 1: 2D to 3D model generation
 
-A simple script I threw together to convert 2D images into 3D `.glb` models using OpenAI's Shap-E. 
-
-It runs locally. It's set up to force CPU usage on Macs to avoid the common "MPS float64" crashes that happen with PyTorch on Apple Silicon.
+A simple program to convert 2D images into 3D `.glb` models using OpenAI's Shap-E. It runs locally. It's set up to force CPU usage on Macs to avoid the common "MPS float64" crashes that happen with PyTorch on Apple Silicon (M1).
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 # project structure
-two-d-to-three-d/
+gen-three-d-model/
 ├── gen_3d.py          
 ├── requirements.txt   
 ├── README.md          
