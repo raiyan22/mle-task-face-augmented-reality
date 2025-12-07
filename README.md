@@ -19,13 +19,15 @@ gen-three-d-model/
 python3 -m venv venv
 source venv/bin/activate
 ```
-on Windows use: venv\Scripts\activate
+on Windows use: ```venv\Scripts\activate```
 
 ### install dependencies
-pip install -r requirements.txt
+```pip3 install -r requirements.txt```
+
+<img width="1544" height="1079" alt="Screenshot 2025-12-07 at 10 59 42 AM" src="https://github.com/user-attachments/assets/bc5797d1-802c-4c03-b1b2-1324192de3d9" />
 
 ### basic run
-```python3 gen_3d.py --input "input/hat.jpeg"```
+```python3 gen_3d.py --input input/hat.jpeg```
 
 
 | Flag / Option       | Description                                              | Required | Default / Example            |
@@ -35,9 +37,9 @@ pip install -r requirements.txt
 | `--steps` / `-s`   | Number of diffusion steps. Lower is faster; higher yields better detail. |          | `64`                         |
 
 ### example
-```python3 gen_3d.py -i input/image.png -s 8```
+```python3 gen_3d.py -i input/hat.jpeg -s 8```
 
-```python3 gen_3d.py -i input/image.png -steps 64```
+```python3 gen_3d.py -i input/hat.jpeg -steps 64```
 
 Here -s 8 denotes the diffusion steps. the value 64 gives moderately good looking 3d model while taking a good period of time.  
 
@@ -45,7 +47,9 @@ First Run: The first time it will be downloading about 2GB of models from OpenAI
 
 for Mac users: I've disabled GPU acceleration (MPS) in the script because Shap-E uses 64-bit floats that Apple's Metal shaders don't support yet. It runs on CPU. I also tried to test the TripoSR architecture due to its state-of-the-art performance but unfortunately it was not working as expected yet.
 
-After generating a .glb file, it can viewed at [meshy.ai](https://www.meshy.ai/3d-tools/online-viewer/glb) or in macOS via spacebar in finder
+After generating a .glb file, it can viewed at [meshy.ai](https://www.meshy.ai/3d-tools/online-viewer/glb) or in macOS via spacebar in finder:
+
+<img width="1903" height="1079" alt="Screenshot 2025-12-07 at 11 20 54 AM" src="https://github.com/user-attachments/assets/92c582fd-1698-4390-9548-bf6ca179ab13" />
 
 
 ## task 2: AR hat demo
